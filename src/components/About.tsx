@@ -91,16 +91,28 @@ const About = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold mb-4">Data Engineer & Analytics Specialist</h3>
               <p className="text-gray-300 mb-6">
-                With over {experienceYears} years of experience in the data engineering field, I specialize in designing
-                and implementing data pipelines, ETL processes, and analytics solutions that help businesses make
-                data-driven decisions.
+                As a Data Engineer and Analyst i am passionate about designing efficient data pipelines and unlocking actionable insights from data. 
+                With a strong foundation in data engineering, analytics, and business intelligence, I specialize in SQL, Python, and 
+                cloud-based data solutions.
               </p>
               <p className="text-gray-300 mb-6">
-                My passion lies in solving complex data problems and creating efficient, scalable data architectures
-                that transform raw information into valuable insights.
+                I have 3+ years of professional experience as a Data Analyst, where I worked extensively with data visualization, reporting, and 
+                business intelligence tools to drive data-driven decision-making. Additionally, I have successfully completed multiple freelance projects 
+                in data engineering, focusing on data migration from on-prem to cloud, ETL pipeline development, and data transformation processes.
               </p>
+              <p className="text-gray-300 mb-6">
+                With hands-on experience in data analytics, I transitioned into data engineering to gain a deeper understanding of the entire data lifecycle. 
+                My expertise includes working with Databricks to build and optimize big data workflows, develop scalable ETL pipelines, and implement 
+                machine learning solutions on distributed computing frameworks. I leverage Apache Spark within Databricks to process large-scale datasets efficiently, 
+                ensuring seamless data integration and transformation.
+              </p>
+              <p className="text-gray-300 mb-6">
+                I am always open to collaborating on innovative projects, solving complex data challenges, and exploring new opportunities in data engineering and analytics. 
+                Let’s connect and build data-driven solutions together!
+              </p>
+              
               <div className="flex flex-wrap gap-3 mb-8">
-                {["Python", "SQL", "Spark", "Hadoop", "AWS", "Azure", "Kafka", "Airflow", "Snowflake", "Tableau"].map(
+                {["Python", "SQL", "Apache Spark", "Apache Airflow", "AWS", "Azure", "Kafka", "ETL/ELT Pipelines", "Snowflake", "Tableau", "Data Pipeline Automation"," Data Integration & Transformation", "PowerBI", "GitHub", "Data Governance & Security", "Data Quality Monitoring & Performance Tuning"].map(
                   (skill) => (
                     <span key={skill} className="px-3 py-1 bg-purple-900/30 text-purple-400 rounded-full text-sm">
                       {skill}
