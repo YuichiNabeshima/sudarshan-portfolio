@@ -31,16 +31,52 @@ const Education = () => {
 
   const education = [
     {
-      degree: "Master of Technology in Computer Science",
-      institution: "Indian Institute of Technology, Delhi",
-      year: "2014 - 2016",
-      description: "Specialized in Data Science and Machine Learning with a focus on big data technologies.",
+      degree: "Diploma in Data Engineering and Analytics",
+      institution: "Canadian College of Technology and Business, Vancouver",
+      year: "2024 - 2025",
+      description: (
+        <>
+          <p>Focus: Data engineering, big data technologies, and analytics.</p>
+          <ul className="list-disc pl-5 text-gray-300">
+            <li>Hands-on experience in ETL pipeline development and data warehousing.</li>
+            <li>Exposure to big data processing frameworks like Apache Spark and Hadoop.</li>
+            <li>Gained skills in SQL, Python, and cloud-based data solutions.</li>
+            <li>Developed data-driven decision-making abilities through real-world projects.</li>
+          </ul>
+        </>
+      ),
     },
     {
-      degree: "Bachelor of Engineering in Computer Science",
-      institution: "Delhi Technological University",
-      year: "2010 - 2014",
-      description: "Graduated with honors, focusing on database systems and software engineering.",
+      degree: "Master of Business Administration in Finance and Marketing",
+      institution: "SSN College of Engineering, Chennai",
+      year: "2013 - 2015",
+      description: (
+        <>
+          <p>Focus: Business strategy, financial management, and market analytics.</p>
+          <ul className="list-disc pl-5 text-gray-300">
+            <li>Specialized in market research, consumer behavior, and digital marketing strategies.</li>
+            <li>Developed strong analytical and decision-making skills for business problem-solving.</li>
+            <li>Gained experience in financial planning, risk assessment, and business development.</li>
+            <li>Worked on case studies involving market trends and competitive analysis.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      degree: "Bachelor of Engineering in Electronics and Communication",
+      institution: "Anna University, Chennai",
+      year: "2009 - 2013",
+      description: (
+        <>
+          <p>Focus: Core engineering principles, communication systems, and problem-solving.</p>
+          <ul className="list-disc pl-5 text-gray-300">
+            <li>Built a solid foundation in electronic circuits, communication networks, and programming.</li>
+            <li>Developed critical thinking and problem-solving skills for technical challenges.</li>
+            <li>Completed projects on embedded systems and signal processing.</li>
+            <li>Gained exposure to software tools and database management fundamentals.</li>
+          </ul>
+        </>
+      ),
     },
   ]
 
