@@ -116,7 +116,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Sudarshan Karunanithty
+            Sudarshan Karunanithy
           </motion.h1>
           <motion.div
             className="text-xl md:text-2xl text-gray-300 mb-8"

@@ -82,7 +82,7 @@ const About = () => {
               <div className="relative aspect-square overflow-hidden rounded-xl">
                 <img
                   src="/placeholder.svg?height=500&width=500"
-                  alt="Sudarshan Karunanithty"
+                  alt="Sudarshan Karunanithy"
                   className="w-full h-full object-cover"
                 />
               </div>
