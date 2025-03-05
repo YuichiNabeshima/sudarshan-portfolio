@@ -82,39 +82,39 @@ const Education = () => {
 
   const certifications = [
     {
-      name: "AWS Certified Data Analytics - Specialty",
-      issuer: "Amazon Web Services",
-      year: "2022",
-      icon: <FiAward size={20} />,
-    },
-    {
-      name: "Google Professional Data Engineer",
-      issuer: "Google Cloud",
-      year: "2021",
-      icon: <FiAward size={20} />,
-    },
-    {
-      name: "Databricks Certified Developer for Apache Spark",
-      issuer: "Databricks",
-      year: "2020",
+      name: "GitHub Foundations",
+      issuer: "GitHub",
+      year: "2025",
       icon: <FiAward size={20} />,
     },
     {
       name: "Microsoft Certified: Azure Data Engineer Associate",
       issuer: "Microsoft",
-      year: "2019",
+      year: "2025",
       icon: <FiAward size={20} />,
     },
     {
-      name: "Cloudera Certified Professional: Data Engineer",
-      issuer: "Cloudera",
-      year: "2018",
+      name: "Databricks Certified Data Engineer Associate",
+      issuer: "Databricks",
+      year: "2025",
       icon: <FiAward size={20} />,
     },
     {
-      name: "IBM Data Science Professional Certificate",
-      issuer: "IBM",
-      year: "2017",
+      name: "Microsoft Certified: Azure Fundamentals",
+      issuer: "Microsoft",
+      year: "2025",
+      icon: <FiAward size={20} />,
+    },
+    {
+      name: "Google Analytics Certification",
+      issuer: "Google-SkillShop",
+      year: "2025",
+      icon: <FiAward size={20} />,
+    },
+    {
+      name: "PCEP™ – Certified Entry-Level Python Programmer",
+      issuer: "Python Institue",
+      year: "2024",
       icon: <FiAward size={20} />,
     },
   ]
