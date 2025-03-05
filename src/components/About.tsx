@@ -59,7 +59,7 @@ const About = () => {
     },
   ]
 
-  const experienceYears = 2+
+  const experienceYears = '2+'
 
   return (
     <section id="about" className="py-20 bg-black relative">
