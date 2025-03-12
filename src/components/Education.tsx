@@ -86,6 +86,7 @@ const Education = () => {
       issuer: "GitHub",
       year: "2025",
       icon: <FiAward size={20} />,
+      link: 'https://www.credly.com/badges/7556c5d8-693e-4fe3-8967-29a43a1d54de/linked_in_profile',
     },
     {
       name: "Microsoft Certified: Azure Data Engineer Associate",
@@ -164,7 +165,29 @@ const Education = () => {
                 <h3 className="text-2xl font-bold">Certifications</h3>
               </div>
               <div className="grid grid-cols-1 gap-4">
-                {certifications.map((cert, index) => (
+                {certifications.map((cert, index) => cert.link ? (
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    key={index}
+                  >
+                    <motion.div
+                      className="flex items-center p-4 bg-gray-900/50 rounded-lg border border-gray-800 hover:border-purple-600/50 transition-colors duration-300"
+                      whileHover={{ x: 5 }}
+                    >
+                      <div className="mr-4 text-purple-500">{cert.icon}</div>
+                      <div>
+                        <h4 className="font-bold">{cert.name}</h4>
+                        <div className="flex items-center text-sm text-gray-400">
+                          <span>{cert.issuer}</span>
+                          <span className="mx-2">•</span>
+                          <span>{cert.year}</span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  </a>
+                ) : (
                   <motion.div
                     key={index}
                     className="flex items-center p-4 bg-gray-900/50 rounded-lg border border-gray-800 hover:border-purple-600/50 transition-colors duration-300"
@@ -180,7 +203,8 @@ const Education = () => {
                       </div>
                     </div>
                   </motion.div>
-                ))}
+                ))
+              }
               </div>
             </motion.div>
           </div>
