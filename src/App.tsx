@@ -9,23 +9,13 @@ import Experience from "./components/Experience"
 import Projects from "./components/Projects"
 import Education from "./components/Education"
 import Contact from "./components/Contact"
-import Cursor from "./components/Cursor"
 import Loader from "./components/Loader"
 
 function App() {
   const [loading, setLoading] = useState(true)
   const [activeSection, setActiveSection] = useState("hero")
-  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    // Check if device is mobile
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-
-    checkMobile()
-    window.addEventListener("resize", checkMobile)
-
     // Simulate loading
     const timer = setTimeout(() => {
       setLoading(false)
@@ -33,7 +23,6 @@ function App() {
 
     return () => {
       clearTimeout(timer)
-      window.removeEventListener("resize", checkMobile)
     }
   }, [])
 
@@ -57,8 +46,7 @@ function App() {
   }, [])
 
   return (
-    <div className={`bg-black text-white min-h-screen ${isMobile ? "" : "cursor-none"}`}>
-      {!isMobile && <Cursor />}
+    <div className={`bg-black text-white min-h-screen`}>
       <AnimatePresence>
         {loading ? (
           <Loader key="loader" />
